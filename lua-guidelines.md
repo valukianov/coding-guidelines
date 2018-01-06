@@ -264,13 +264,13 @@ need_*, should_*, must_*, in_*, not_* и т.п.
               )
           )
 
-3) Допускается свешивание `..` при переносах
-
-    writeln_flush(
-        "-> blablablablablablablablablabla "
-     .. blabla_blabla
-     .. "': blablablablablablablablablabla"
-    )
+3) Допускается свешивание `..` при переносах:
+ 
+       writeln_flush(
+           "-> blablablablablablablablablabla "
+        .. blabla_blabla
+        .. "': blablablablablablablablablabla"
+       )
 
 4)
 
@@ -724,8 +724,8 @@ need_*, should_*, must_*, in_*, not_* и т.п.
 
 ### Основы
 
-- [[http://luajit.org/ext_ffi.html]]
-- [[http://stackoverflow.com/questions/7167566/luajit-2-optimization-guide]]
+- http://luajit.org/ext_ffi.html
+- http://stackoverflow.com/questions/7167566/luajit-2-optimization-guide
 
 ### Объявление
 
@@ -798,15 +798,15 @@ need_*, should_*, must_*, in_*, not_* и т.п.
 
   Нежелательно:
 
-    local state
-    ...
-    local foo = function(bar)
-      state = bar
-    end
-    ...
-    local baz = function()
-      print(state)
-    end
+      local state
+      ...
+      local foo = function(bar)
+        state = bar
+      end
+      ...
+      local baz = function()
+        print(state)
+      end
 
   Исключение — для системных объектов-синглтонов, с соответствующим комментарием,
   при наличии разрешения техлида.
@@ -817,13 +817,13 @@ need_*, should_*, must_*, in_*, not_* и т.п.
 
   Нежелательно:
 
-    local fooer
-    do
-      fooer =
-      {
-        bar_ = 42;
-      }
-    end
+      local fooer
+      do
+        fooer =
+        {
+          bar_ = 42;
+        }
+      end
 
   У объекта в обязательном порядке должна быть фабрика.
 

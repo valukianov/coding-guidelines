@@ -165,7 +165,7 @@ f(foo BOOLOP bar, baz)
 (a && b || c) ? op1 : op2;
 ```
 
-# Best practicies
+# Best practices
 
 ## Стандарты
 Допустимо использовать C89 или C99, но стандарт должен быть един по всему
